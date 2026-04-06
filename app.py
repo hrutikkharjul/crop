@@ -21,7 +21,7 @@ ph = st.sidebar.number_input('pH Value', min_value=0.0, max_value=14.0, value=6.
 rainfall = st.sidebar.number_input('Rainfall (mm)', min_value=0.0, max_value=300.0, value=202.93, format="%.2f")
 
 # 4. Create a prediction button
-if st.sidebar.button('Predict Crop'):
+if st.sidebar.button('Recommend Crop'):
     # 5. Create a Pandas DataFrame from the user inputs
     input_data = pd.DataFrame([{
         'N': N,
